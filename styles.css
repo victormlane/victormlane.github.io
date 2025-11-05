@@ -1,23 +1,15 @@
 
-:root{
-  --bg:#0e0e10;
-  --text:#111;
-  --muted:#6b7280;
-  --ink:#0b0b0c;
-  --paper:#ffffff;
-  --accent:#111827;
-  --line:#e5e7eb;
-}
+:root{--line:#e5e7eb;--ink:#111;--muted:#6b7280}
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji; color:var(--text);background:#fafafa; line-height:1.6}
+html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.6;color:var(--ink);background:#fafafa}
 a{color:inherit}
 .container{max-width:1100px;margin:0 auto;padding:0 20px}
-.nav{position:sticky;top:0;background:rgba(255,255,255,.75);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:50}
+.nav{position:sticky;top:0;background:rgba(255,255,255,.78);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:50}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
 .brand{font-weight:600;letter-spacing:.02em}
 .nav a{margin-left:22px;text-decoration:none;opacity:.9}
 .nav a:hover{opacity:1}
-.hero{background:#111; color:#eaeaea;padding:72px 0}
+.hero{background:#111;color:#eaeaea;padding:72px 0}
 .hero h1{font-size:clamp(32px,5vw,56px);line-height:1.1;margin:0 0 10px}
 .hero p{margin:8px 0 0;color:#cfcfcf}
 .hero-grid{display:grid;grid-template-columns:1fr;gap:32px;align-items:center}
